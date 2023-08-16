@@ -28,7 +28,7 @@ export const HeaderOptions = styled.ul`
   li {
     padding: 8px;
     margin: 26px;
-    gap: 8px;
+    gap: 6px;
 
     list-style: none;
     font-weight: 700;

@@ -9,6 +9,7 @@ const ButtonStyled = styled.button`
 `
 
 export const ButtonPrimaryStyled = styled(ButtonStyled)`
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.colors.orange.primary};
   color: ${({ theme }) => theme.colors.gray.secondary};
+  font-weight: 700;
 `
