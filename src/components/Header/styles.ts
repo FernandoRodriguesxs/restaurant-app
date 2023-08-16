@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 96px;
-  background-color: aquamarine;
 
   nav {
     display: flex;
@@ -24,7 +23,7 @@ export const LogoBox = styled.div`
 export const HeaderOptions = styled.ul`
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 
   li {
     padding: 8px;
