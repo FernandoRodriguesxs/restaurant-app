@@ -13,3 +13,9 @@ export const ButtonPrimaryStyled = styled(ButtonStyled)`
   color: ${({ theme }) => theme.colors.gray.secondary};
   font-weight: 700;
 `
+
+export const ButtonSecondaryStyled = styled(ButtonStyled)`
+  background: ${({ theme }) => theme.colors.orange.primary};
+  color: ${({ theme }) => theme.colors.white};
+  font-weight: 700;
+`
