@@ -5,8 +5,9 @@ export const HeaderContainer = styled.header`
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
   }
 `
 
@@ -16,7 +17,7 @@ export const LogoBox = styled.div`
   gap: 8px;
 
   img {
-    height: 90px;
+    height: 70px;
   }
 `
 

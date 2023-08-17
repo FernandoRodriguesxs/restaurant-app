@@ -1,35 +1,41 @@
 import styled from 'styled-components'
 
+export const Wrapper = styled.div`
+  max-width: 1280px;
+  padding: 32px;
+  margin: 0 auto;
+`
+
 export const Hero = styled.div`
   height: calc(100vh - 96px);
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
 
-  margin: 26px;
+  margin-bottom: 6px;
 
   .hero-left {
     display: flex;
-    height: 600px;
     flex-direction: column;
+    justify-content: center;
 
     h1 {
       color: ${({ theme }) => theme.colors.gray.primary};
       font-size: 4rem;
-      line-height: 64px;
     }
 
     p {
       color: ${({ theme }) => theme.colors.gray.secondary};
-      margin: 26px 0;
       line-height: 20px;
     }
   }
 
   .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
-      height: 600px;
-      margin-bottom: 60px;
+      height: 500px;
     }
   }
 `
