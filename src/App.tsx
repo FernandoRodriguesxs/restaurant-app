@@ -19,7 +19,7 @@ export const App = () => {
               <p>
                 Healthy switcher do all the prep work, like peeding,
                 <br />
-                chopping & marinating, so you can coock a fresh food.
+                chopping & marinating, so you can cock a fresh food.
               </p>
               <ButtonSecondary>Order Now</ButtonSecondary>
             </div>

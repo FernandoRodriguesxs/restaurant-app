@@ -33,5 +33,16 @@ export const HeaderOptions = styled.ul`
 
     list-style: none;
     font-weight: 700;
+
+    position: relative;
+
+    .cart_amount {
+      position: absolute;
+      right: 6px;
+      width: 12px;
+      height: 12px;
+      background: white;
+      border-radius: 999px;
+    }
   }
 `

@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(./assets/blob.png) no-repeat top right;
+  background-size: 1200px;
 }
 
 a {

@@ -16,7 +16,8 @@ export const Header = () => {
           <li>About us</li>
           <li>Contact us</li>
           <li>
-            <ShoppingCart size={28} color="#b0a1ba" weight="fill" />
+            <ShoppingCart size={28} color="#484848" weight="fill" />
+            <span className="cart_amount" />
           </li>
           <li>
             <ButtonPrimary>Booking Now</ButtonPrimary>

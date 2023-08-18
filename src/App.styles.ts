@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 32px;
   margin: 0 auto;
 `
@@ -16,26 +16,37 @@ export const Hero = styled.div`
   .hero-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    width: 100%;
+    gap: 32px;
+
+    position: relative;
 
     h1 {
       color: ${({ theme }) => theme.colors.gray.primary};
-      font-size: 4rem;
+      font-size: 3.5rem;
+      margin-top: 128px;
+      line-height: 64px;
     }
 
     p {
       color: ${({ theme }) => theme.colors.gray.secondary};
-      line-height: 20px;
+      line-height: 32px;
+      font-weight: 500;
     }
   }
 
   .hero-right {
+    position: absolute;
+
+    right: 80px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-      height: 500px;
+      height: 800px;
     }
   }
 `
