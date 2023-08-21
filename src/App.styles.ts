@@ -50,3 +50,26 @@ export const Hero = styled.div`
     }
   }
 `
+
+export const InformaticonSection = styled.section`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    padding: 24px;
+
+    strong {
+      color: ${({ theme }) => theme.colors.gray.primary};
+    }
+
+    p {
+      color: ${({ theme }) => theme.colors.gray.secondary};
+    }
+  }
+`
