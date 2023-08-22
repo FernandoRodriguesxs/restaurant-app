@@ -1,7 +1,8 @@
 import { Header } from './components/Header'
-import { Wrapper, Hero, InformaticonSection } from './App.styles'
-import { ButtonSecondary } from './components/Button'
+import { Wrapper, Hero, InformaticonSection, AboutSection } from './App.styles'
+import { ButtonSecondary, ButtonThree } from './components/Button'
 import heroImg from './assets/img-hero.png'
+import aboutImg from './assets/img-header.png'
 import { Clock, MapPin, Phone } from '@phosphor-icons/react'
 
 export const App = () => {
@@ -47,6 +48,35 @@ export const App = () => {
               <p>Call Online</p>
             </div>
           </InformaticonSection>
+        </Wrapper>
+        <Wrapper>
+          <AboutSection>
+            <picture className="about-left">
+              <img src={aboutImg} alt="#" />
+            </picture>
+            <div className="about-right">
+              <p className="about-orange">About</p>
+              <h2>
+                Food Is An important Part <br />
+                Of a Balanced Diet
+              </h2>
+              <p>
+                They actually assured me over and over that take <br />
+                little time off and come back and work.Fast <br />
+                forward tow weeks after <br />
+                we are going for a new project <br />
+                <br />
+                I wrote to let them know ready to come back they <br />
+                kicked <br />
+                me of the their team slack all of us are make company <br />
+                email
+              </p>
+              <div className="button-group">
+                <ButtonSecondary>Order Now</ButtonSecondary>
+                <ButtonThree>Watch Video</ButtonThree>
+              </div>
+            </div>
+          </AboutSection>
         </Wrapper>
       </main>
     </>

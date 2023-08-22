@@ -16,6 +16,7 @@ export const Hero = styled.div`
   .hero-left {
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
 
     width: 100%;
     gap: 32px;
@@ -70,6 +71,47 @@ export const InformaticonSection = styled.section`
 
     p {
       color: ${({ theme }) => theme.colors.gray.secondary};
+    }
+  }
+`
+
+export const AboutSection = styled.section`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+
+  .about-left {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: end; */
+    border: 1px solid red;
+
+    width: 100%;
+    /* left: 900px; */
+    gap: 32px;
+
+    position: relative;
+    .about-orange {
+      color: ${({ theme }) => theme.colors.orange.primary};
+    }
+    h2 {
+      color: ${({ theme }) => theme.colors.gray.secondary};
+      font-size: 2rem;
+      /* margin-top: 128px; */
+      /* line-height: 64px; */
+    }
+
+    p {
+      color: ${({ theme }) => theme.colors.gray.secondary};
+      /* line-height: 32px;
+      font-weight: 500; */
     }
   }
 `
