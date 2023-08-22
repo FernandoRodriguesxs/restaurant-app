@@ -1,5 +1,9 @@
 import { ReactNode } from 'react'
-import { ButtonPrimaryStyled } from './styles'
+import {
+  ButtonPrimaryStyled,
+  ButtonSecondaryStyled,
+  ButtonThreeStyled,
+} from './styles'
 
 interface IButtonPrimaryProps {
   children: ReactNode
@@ -15,8 +19,8 @@ export const ButtonPrimary = ({ children }: IButtonPrimaryProps) => {
   return <ButtonPrimaryStyled>{children}</ButtonPrimaryStyled>
 }
 export const ButtonSecondary = ({ children }: IButtonSecondaryProps) => {
-  return <ButtonPrimaryStyled>{children}</ButtonPrimaryStyled>
+  return <ButtonSecondaryStyled>{children}</ButtonSecondaryStyled>
 }
-export const ButtonThree = ({ children }: IButtonThreeProps) => {
-  return <ButtonPrimaryStyled>{children}</ButtonPrimaryStyled>
+export const ButtonVideo = ({ children }: IButtonThreeProps) => {
+  return <ButtonThreeStyled>{children}</ButtonThreeStyled>
 }

@@ -1,9 +1,9 @@
 import { Header } from './components/Header'
 import { Wrapper, Hero, InformaticonSection, AboutSection } from './App.styles'
-import { ButtonSecondary, ButtonThree } from './components/Button'
+import { ButtonSecondary, ButtonVideo } from './components/Button'
 import heroImg from './assets/img-hero.png'
 import aboutImg from './assets/img-header.png'
-import { Clock, MapPin, Phone } from '@phosphor-icons/react'
+import { Clock, MapPin, Phone, PlayCircle } from '@phosphor-icons/react'
 
 export const App = () => {
   return (
@@ -54,26 +54,31 @@ export const App = () => {
             <picture className="about-left">
               <img src={aboutImg} alt="#" />
             </picture>
-            <div className="about-right">
-              <p className="about-orange">About</p>
-              <h2>
-                Food Is An important Part <br />
-                Of a Balanced Diet
-              </h2>
-              <p>
-                They actually assured me over and over that take <br />
-                little time off and come back and work.Fast <br />
-                forward tow weeks after <br />
-                we are going for a new project <br />
-                <br />
-                I wrote to let them know ready to come back they <br />
-                kicked <br />
-                me of the their team slack all of us are make company <br />
-                email
-              </p>
-              <div className="button-group">
-                <ButtonSecondary>Order Now</ButtonSecondary>
-                <ButtonThree>Watch Video</ButtonThree>
+            <div className="about-right-container">
+              <div className="about-right">
+                <p className="about-orange">About</p>
+                <h2>
+                  Food Is An important Part <br />
+                  Of a Balanced Diet
+                </h2>
+                <p>
+                  They actually assured me over and over that take <br />
+                  little time off and come back and work.Fast <br />
+                  forward tow weeks after <br />
+                  we are going for a new project <br />
+                  <br />
+                  I wrote to let them know ready to come back they <br />
+                  kicked <br />
+                  me of the their team slack all of us are make company <br />
+                  email
+                </p>
+                <div className="button-group">
+                  <ButtonSecondary>Order Now</ButtonSecondary>
+                  <ButtonVideo>
+                    <PlayCircle size={32} />
+                    Watch Video
+                  </ButtonVideo>
+                </div>
               </div>
             </div>
           </AboutSection>

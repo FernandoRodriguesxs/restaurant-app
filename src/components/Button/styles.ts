@@ -20,7 +20,11 @@ export const ButtonSecondaryStyled = styled(ButtonStyled)`
   font-weight: 700;
 `
 
-export const ButtonThree = styled(ButtonStyled)`
+export const ButtonThreeStyled = styled(ButtonStyled)`
   background: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.gray.primary};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4;
 `
