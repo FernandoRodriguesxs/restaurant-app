@@ -1,9 +1,24 @@
 import { Header } from './components/Header'
-import { Wrapper, Hero, InformaticonSection, AboutSection } from './App.styles'
+import {
+  Wrapper,
+  Hero,
+  InformaticonSection,
+  AboutSection,
+  WorkSection,
+  ServicesCard,
+} from './App.styles'
 import { ButtonSecondary, ButtonVideo } from './components/Button'
 import heroImg from './assets/img-hero.png'
 import aboutImg from './assets/img-header.png'
-import { Clock, MapPin, Phone, PlayCircle } from '@phosphor-icons/react'
+import {
+  Clock,
+  BowlFood,
+  Truck,
+  MapPin,
+  Phone,
+  PlayCircle,
+  HandTap,
+} from '@phosphor-icons/react'
 
 export const App = () => {
   return (
@@ -83,6 +98,46 @@ export const App = () => {
             </div>
           </AboutSection>
         </Wrapper>
+        <WorkSection>
+          <div className="work">
+            <p className="work-orange">Work</p>
+            <h2>How It Works</h2>
+            <p>
+              its through mistakes that you actually can grow you get rid of.{' '}
+              <br />
+              everything that is not essential to makihave to get bad
+            </p>
+          </div>
+        </WorkSection>
+        <ServicesCard>
+          <div className="card-work">
+            <Truck size={64} color="#f28202" weight="fill" />
+            <h3>Fast Deliveries</h3>
+            <p>
+              Your freshly prepped 15-min dinner <br />
+              kits arrive on your doorstep in a <br />
+              refrigerated box
+            </p>
+          </div>
+          <div className="card-work">
+            <HandTap size={64} color="#f28202" weight="fill" />
+            <h3>Fast Deliveries</h3>
+            <p>
+              Your freshly prepped 15-min dinner <br />
+              kits arrive on your doorstep in a <br />
+              refrigerated box
+            </p>
+          </div>
+          <div className="card-work">
+            <BowlFood size={64} color="#f28202" weight="fill" />
+            <h3>Fast Deliveries</h3>
+            <p>
+              Your freshly prepped 15-min dinner <br />
+              kits arrive on your doorstep in a <br />
+              refrigerated box
+            </p>
+          </div>
+        </ServicesCard>
       </main>
     </>
   )

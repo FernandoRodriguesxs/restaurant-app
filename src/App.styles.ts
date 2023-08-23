@@ -109,5 +109,60 @@ export const AboutSection = styled.section`
     p {
       color: ${({ theme }) => theme.colors.gray.secondary};
     }
+    .button-group {
+      display: flex;
+    }
+  }
+`
+
+export const WorkSection = styled.section`
+  display: flex;
+  justify-content: center;
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    .work-orange {
+      color: ${({ theme }) => theme.colors.orange.primary};
+    }
+    h2 {
+      color: ${({ theme }) => theme.colors.gray.primary};
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: center;
+      line-height: 28px;
+      color: ${({ theme }) => theme.colors.gray.secondary};
+    }
+  }
+`
+
+export const ServicesCard = styled.section`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 38px;
+
+  .card-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 36px 12px;
+
+    gap: 34px;
+
+    h3 {
+      color: ${({ theme }) => theme.colors.gray.primary};
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: ${({ theme }) => theme.colors.gray.secondary};
+      text-align: center;
+      font-size: 1rem;
+    }
   }
 `
