@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import { Card } from './components/Card'
 import {
   Wrapper,
   Hero,
@@ -6,10 +7,12 @@ import {
   AboutSection,
   WorkSection,
   ServicesCard,
+  CardSection,
 } from './App.styles'
 import { ButtonSecondary, ButtonVideo } from './components/Button'
 import heroImg from './assets/img-hero.png'
 import aboutImg from './assets/img-header.png'
+import cardImg from './assets/card5.jpg'
 import {
   Clock,
   BowlFood,
@@ -18,6 +21,7 @@ import {
   Phone,
   PlayCircle,
   HandTap,
+  Star,
 } from '@phosphor-icons/react'
 
 export const App = () => {
@@ -98,46 +102,128 @@ export const App = () => {
             </div>
           </AboutSection>
         </Wrapper>
-        <WorkSection>
-          <div className="work">
-            <p className="work-orange">Work</p>
-            <h2>How It Works</h2>
-            <p>
-              its through mistakes that you actually can grow you get rid of.{' '}
-              <br />
-              everything that is not essential to makihave to get bad
-            </p>
-          </div>
-        </WorkSection>
-        <ServicesCard>
-          <div className="card-work">
-            <Truck size={64} color="#f28202" weight="fill" />
-            <h3>Fast Deliveries</h3>
-            <p>
-              Your freshly prepped 15-min dinner <br />
-              kits arrive on your doorstep in a <br />
-              refrigerated box
-            </p>
-          </div>
-          <div className="card-work">
-            <HandTap size={64} color="#f28202" weight="fill" />
-            <h3>Fast Deliveries</h3>
-            <p>
-              Your freshly prepped 15-min dinner <br />
-              kits arrive on your doorstep in a <br />
-              refrigerated box
-            </p>
-          </div>
-          <div className="card-work">
-            <BowlFood size={64} color="#f28202" weight="fill" />
-            <h3>Fast Deliveries</h3>
-            <p>
-              Your freshly prepped 15-min dinner <br />
-              kits arrive on your doorstep in a <br />
-              refrigerated box
-            </p>
-          </div>
-        </ServicesCard>
+        <Wrapper>
+          <WorkSection>
+            <div className="work">
+              <p className="work-orange">Work</p>
+              <h2>How It Works</h2>
+              <p>
+                its through mistakes that you actually can grow you get rid of.{' '}
+                <br />
+                everything that is not essential to makihave to get bad
+              </p>
+            </div>
+          </WorkSection>
+        </Wrapper>
+        <Wrapper>
+          <ServicesCard>
+            <div className="card-work">
+              <Truck size={64} color="#f28202" weight="fill" />
+              <h3>Fast Deliveries</h3>
+              <p>
+                Your freshly prepped 15-min dinner <br />
+                kits arrive on your doorstep in a <br />
+                refrigerated box
+              </p>
+            </div>
+            <div className="card-work">
+              <HandTap size={64} color="#f28202" weight="fill" />
+              <h3>Fast Deliveries</h3>
+              <p>
+                Your freshly prepped 15-min dinner <br />
+                kits arrive on your doorstep in a <br />
+                refrigerated box
+              </p>
+            </div>
+            <div className="card-work">
+              <BowlFood size={64} color="#f28202" weight="fill" />
+              <h3>Fast Deliveries</h3>
+              <p>
+                Your freshly prepped 15-min dinner <br />
+                kits arrive on your doorstep in a <br />
+                refrigerated box
+              </p>
+            </div>
+          </ServicesCard>
+        </Wrapper>
+        <Wrapper>
+          <WorkSection>
+            <div className="work">
+              <p className="work-orange">Menu</p>
+              <h2>Explore Our Best Menu</h2>
+              <p>
+                its through mistakes that you actually can grow you get rid of.{' '}
+                <br />
+                everything that is not essential to makihave to get bad
+              </p>
+            </div>
+          </WorkSection>
+        </Wrapper>
+        <Wrapper>
+          <CardSection>
+            <Card
+              foodImg={cardImg}
+              title="Rose Muffen"
+              subtitle="Served with french fries + "
+              price="12$"
+              description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
+              icon={<Star size={28} color="#f28202" weight="fill" />}
+            />
+            <Card
+              foodImg={cardImg}
+              title="Rose Muffen"
+              subtitle="Served with french fries + "
+              price="12$"
+              description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
+              icon={<Star size={28} color="#f28202" weight="fill" />}
+            />
+            <Card
+              foodImg={cardImg}
+              title="Rose Muffen"
+              subtitle="Served with french fries + "
+              price="12$"
+              description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
+              icon={<Star size={28} color="#f28202" weight="fill" />}
+            />
+            <Card
+              foodImg={cardImg}
+              title="Rose Muffen"
+              subtitle="Served with french fries + "
+              price="12$"
+              description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
+              icon={<Star size={28} color="#f28202" weight="fill" />}
+            />
+            <Card
+              foodImg={cardImg}
+              title="Rose Muffen"
+              subtitle="Served with french fries + "
+              price="12$"
+              description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
+              icon={<Star size={28} color="#f28202" weight="fill" />}
+            />
+            <Card
+              foodImg={cardImg}
+              title="Rose Muffen"
+              subtitle="Served with french fries + "
+              price="12$"
+              description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
+              icon={<Star size={28} color="#f28202" weight="fill" />}
+            />
+          </CardSection>
+        </Wrapper>
+        <Wrapper>
+          <WorkSection>
+            <div className="work">
+              <p className="work-orange">Testimonial</p>
+              <h2>What They Are Saying</h2>
+              <p>
+                its through mistakes that you actually can grow you get rid of{' '}
+                <br />
+                everything that is not essential to makihave to get bad
+              </p>
+            </div>
+          </WorkSection>
+        </Wrapper>
       </main>
     </>
   )

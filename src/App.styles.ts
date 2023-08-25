@@ -143,7 +143,9 @@ export const WorkSection = styled.section`
 export const ServicesCard = styled.section`
   display: flex;
   justify-content: space-around;
-  margin-top: 38px;
+  gap: 20px;
+
+  margin: 64px;
 
   .card-work {
     display: flex;
@@ -165,4 +167,11 @@ export const ServicesCard = styled.section`
       font-size: 1rem;
     }
   }
+`
+export const CardSection = styled.section`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+
+  margin: 16px 0 128px;
 `
