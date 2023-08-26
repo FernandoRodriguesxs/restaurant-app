@@ -7,19 +7,21 @@ interface ICardProps {
   description: string
   price: string
   foodImg: string
-  icons: ReactNode[]
+  icon: ReactNode
 }
 export const Card = ({
   foodImg,
   title,
   subtitle,
   price,
-  icons,
+  icon,
   description,
 }: ICardProps) => {
   return (
     <CardContainer>
-      <img src={foodImg} alt="" />
+      <picture>
+        <img src={foodImg} alt="" />
+      </picture>
       <div className="product-information">
         <div className="information">
           <h3>{title}</h3>
@@ -29,11 +31,7 @@ export const Card = ({
       </div>
       <p>{description}</p>
       <div className="card-avaliation">
-        <span>
-          {icons.map((icon, index) => (
-            <span key={index}>{icon}</span>
-          ))}
-        </span>
+        <span>{icon}</span>
         <button>+</button>
       </div>
     </CardContainer>

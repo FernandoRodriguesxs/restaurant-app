@@ -5,15 +5,34 @@ export const CardContainer = styled.div`
   flex-direction: column;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 45px;
+  border-top-right-radius: 45px;
 
   width: 350px;
   gap: 16px;
 
-  img {
-    height: 350px;
+  picture {
+    position: relative;
+    overflow: hidden;
     border-bottom-left-radius: 45px;
+    border-top-right-radius: 45px;
+
+    img {
+      max-width: 100%;
+      transition: transform 0.3s;
+      display: block;
+      width: 100%;
+      height: 250px;
+      transform: scale(1);
+      border-bottom-left-radius: 45px;
+      border-top-right-radius: 45px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
+
   .product-information {
     display: flex;
     justify-content: space-between;

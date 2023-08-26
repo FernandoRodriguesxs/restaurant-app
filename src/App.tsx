@@ -15,8 +15,13 @@ import {
 import { ButtonSecondary, ButtonVideo } from './components/Button'
 import heroImg from './assets/img-hero.png'
 import aboutImg from './assets/img-header.png'
-import cardImg from './assets/card5.jpg'
-import snorlax from './assets/snorlax.png'
+import cardImg1 from './assets/card1.jpg'
+import cardImg2 from './assets/card2.jpg'
+import cardImg3 from './assets/card3.jpg'
+import cardImg4 from './assets/card4.jpg'
+import cardImg5 from './assets/card5.jpg'
+import cardImg6 from './assets/card6.jpg'
+import customer from './assets/customer.jpg'
 import LogoImg from './assets/logo.png'
 import {
   Clock,
@@ -170,52 +175,91 @@ export const App = () => {
         <Wrapper>
           <CardSection>
             <Card
-              foodImg={cardImg}
+              foodImg={cardImg1}
               title="Rose Muffen"
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={[<Star size={28} color="#f28202" weight="fill" />]}
+              icon={
+                <>
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                </>
+              }
             />
             <Card
-              foodImg={cardImg}
+              foodImg={cardImg2}
               title="Rose Muffen"
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={[<Star size={28} color="#f28202" weight="fill" />]}
+              icon={
+                <>
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                </>
+              }
             />
             <Card
-              foodImg={cardImg}
+              foodImg={cardImg3}
               title="Rose Muffen"
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={[<Star size={28} color="#f28202" weight="fill" />]}
+              icon={
+                <>
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                </>
+              }
             />
             <Card
-              foodImg={cardImg}
+              foodImg={cardImg4}
               title="Rose Muffen"
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={[<Star size={28} color="#f28202" weight="fill" />]}
+              icon={
+                <>
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                </>
+              }
             />
             <Card
-              foodImg={cardImg}
+              foodImg={cardImg5}
               title="Rose Muffen"
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={[<Star size={28} color="#f28202" weight="fill" />]}
+              icon={
+                <>
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                </>
+              }
             />
             <Card
-              foodImg={cardImg}
+              foodImg={cardImg6}
               title="Rose Muffen"
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={[<Star size={28} color="#f28202" weight="fill" />]}
+              icon={
+                <>
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                  <Star size={28} color="#f28202" weight="fill" />
+                </>
+              }
             />
           </CardSection>
         </Wrapper>
@@ -235,7 +279,7 @@ export const App = () => {
         <Wrapper>
           <FeedbackClient>
             <picture>
-              <img src={snorlax} alt="#" />
+              <img src={customer} alt="#" />
             </picture>
             <p>
               They are engaged communicators and dedicated problem-salvers{' '}

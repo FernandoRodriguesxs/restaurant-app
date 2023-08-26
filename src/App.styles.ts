@@ -188,7 +188,6 @@ export const FeedbackClient = styled.section`
 
   picture img {
     width: 200px;
-    border: 1px solid red;
     border-radius: 999px;
     padding: 15px;
     margin: 30px;
