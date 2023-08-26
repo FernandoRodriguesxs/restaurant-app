@@ -7,14 +7,14 @@ interface ICardProps {
   description: string
   price: string
   foodImg: string
-  icon: ReactNode
+  icons: ReactNode[]
 }
 export const Card = ({
   foodImg,
   title,
   subtitle,
   price,
-  icon,
+  icons,
   description,
 }: ICardProps) => {
   return (
@@ -30,10 +30,9 @@ export const Card = ({
       <p>{description}</p>
       <div className="card-avaliation">
         <span>
-          {icon}
-          {icon}
-          {icon}
-          {icon}
+          {icons.map((icon, index) => (
+            <span key={index}>{icon}</span>
+          ))}
         </span>
         <button>+</button>
       </div>

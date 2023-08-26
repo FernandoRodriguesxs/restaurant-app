@@ -175,3 +175,137 @@ export const CardSection = styled.section`
 
   margin: 16px 0 128px;
 `
+
+export const FeedbackClient = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+  width: 100%;
+  margin-top: 20px;
+
+  picture img {
+    width: 200px;
+    border: 1px solid red;
+    border-radius: 999px;
+    padding: 15px;
+    margin: 30px;
+  }
+
+  p {
+    color: ${({ theme }) => theme.colors.gray.secondary};
+    gap: 16px;
+  }
+
+  .avaliation {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+  }
+`
+
+export const QuestionSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  margin-top: 26px;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: ${({ theme }) => theme.colors.gray.primary};
+    font-size: 2rem;
+  }
+
+  span {
+    display: flex;
+    justify-content: end;
+
+    height: 64px;
+
+    border: 1px solid transparent;
+    border-radius: 999px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+`
+export const Footer = styled.footer`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+
+  margin-top: 32px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: ${({ theme }) => theme.colors.gray.primary};
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 16px;
+    font-size: 14px;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  .logo-footer {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      img {
+        height: 82px;
+        width: 136px;
+      }
+    }
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+      border-radius: 6px;
+      background: #e1e1e9;
+    }
+  }
+`

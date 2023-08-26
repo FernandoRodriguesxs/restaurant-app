@@ -58,12 +58,10 @@ export const CardContainer = styled.div`
 
       background-color: ${({ theme }) => theme.colors.orange.primary};
 
-      padding: 24px;
-
       border: none;
       border-radius: 100% 0% 100% 0% / 100% 100% 0% 100%;
 
-      font-size: 1.5rem;
+      font-size: 3rem;
       color: ${({ theme }) => theme.colors.white};
     }
   }

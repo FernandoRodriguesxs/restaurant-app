@@ -8,11 +8,16 @@ import {
   WorkSection,
   ServicesCard,
   CardSection,
+  FeedbackClient,
+  QuestionSection,
+  Footer,
 } from './App.styles'
 import { ButtonSecondary, ButtonVideo } from './components/Button'
 import heroImg from './assets/img-hero.png'
 import aboutImg from './assets/img-header.png'
 import cardImg from './assets/card5.jpg'
+import snorlax from './assets/snorlax.png'
+import LogoImg from './assets/logo.png'
 import {
   Clock,
   BowlFood,
@@ -22,6 +27,9 @@ import {
   PlayCircle,
   HandTap,
   Star,
+  MetaLogo,
+  LinkedinLogo,
+  TwitterLogo,
 } from '@phosphor-icons/react'
 
 export const App = () => {
@@ -167,7 +175,7 @@ export const App = () => {
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={<Star size={28} color="#f28202" weight="fill" />}
+              icon={[<Star size={28} color="#f28202" weight="fill" />]}
             />
             <Card
               foodImg={cardImg}
@@ -175,7 +183,7 @@ export const App = () => {
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={<Star size={28} color="#f28202" weight="fill" />}
+              icon={[<Star size={28} color="#f28202" weight="fill" />]}
             />
             <Card
               foodImg={cardImg}
@@ -183,7 +191,7 @@ export const App = () => {
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={<Star size={28} color="#f28202" weight="fill" />}
+              icon={[<Star size={28} color="#f28202" weight="fill" />]}
             />
             <Card
               foodImg={cardImg}
@@ -191,7 +199,7 @@ export const App = () => {
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={<Star size={28} color="#f28202" weight="fill" />}
+              icon={[<Star size={28} color="#f28202" weight="fill" />]}
             />
             <Card
               foodImg={cardImg}
@@ -199,7 +207,7 @@ export const App = () => {
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={<Star size={28} color="#f28202" weight="fill" />}
+              icon={[<Star size={28} color="#f28202" weight="fill" />]}
             />
             <Card
               foodImg={cardImg}
@@ -207,7 +215,7 @@ export const App = () => {
               subtitle="Served with french fries + "
               price="12$"
               description="Choice of Coke, Fanta, Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite Sprite, Fanta, Sprite "
-              icon={<Star size={28} color="#f28202" weight="fill" />}
+              icon={[<Star size={28} color="#f28202" weight="fill" />]}
             />
           </CardSection>
         </Wrapper>
@@ -224,7 +232,86 @@ export const App = () => {
             </div>
           </WorkSection>
         </Wrapper>
+        <Wrapper>
+          <FeedbackClient>
+            <picture>
+              <img src={snorlax} alt="#" />
+            </picture>
+            <p>
+              They are engaged communicators and dedicated problem-salvers{' '}
+              <br />
+              regardless of time constraints. The team manageprojet them.
+            </p>
+            <div className="avaliation">
+              <Star size={28} color="#f28202" weight="fill" />
+              <Star size={28} color="#f28202" weight="fill" />
+              <Star size={28} color="#f28202" weight="fill" />
+              <Star size={28} color="#f28202" weight="fill" />
+              <Star size={28} color="#f28202" weight="fill" />
+            </div>
+          </FeedbackClient>
+        </Wrapper>
+        <Wrapper>
+          <QuestionSection>
+            <h2>
+              Have Quest in Mind? <br />
+              Let us help you
+            </h2>
+            <span>
+              <ButtonSecondary>Send</ButtonSecondary>
+            </span>
+          </QuestionSection>
+        </Wrapper>
       </main>
+      <Wrapper>
+        <Footer>
+          <div className="logo-footer">
+            <div className="logo">
+              <img src={LogoImg} alt="" />
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <ul className="social-media">
+              <li>
+                <MetaLogo size={24} />
+              </li>
+              <li>
+                <TwitterLogo size={24} />
+              </li>
+              <li>
+                <LinkedinLogo size={24} />
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Company</h2>
+            <ul>
+              <li>About</li>
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>How it Works</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Support</h2>
+            <ul>
+              <li>Support Carrer</li>
+              <li>24h Service</li>
+              <li>Quick Chat</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Contact</h2>
+            <ul>
+              <li>WathsApp</li>
+              <li>Support 24</li>
+            </ul>
+          </div>
+        </Footer>
+      </Wrapper>
     </>
   )
 }
