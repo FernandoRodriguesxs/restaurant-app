@@ -195,7 +195,6 @@ export const CardSection = styled.section`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 26px;
   }
 `
 
