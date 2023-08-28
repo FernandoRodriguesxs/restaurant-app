@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   height: 96px;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;

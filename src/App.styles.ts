@@ -47,6 +47,10 @@ export const Hero = styled.div`
 
     img {
       height: 800px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 `
@@ -55,6 +59,11 @@ export const InformaticonSection = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .box {
     display: flex;
@@ -81,6 +90,10 @@ export const AboutSection = styled.section`
 
   .about-left {
     position: absolute;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .about-right-container {
@@ -147,6 +160,11 @@ export const ServicesCard = styled.section`
 
   margin: 64px;
 
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   .card-work {
     display: flex;
     flex-direction: column;
@@ -174,6 +192,11 @@ export const CardSection = styled.section`
   gap: 28px;
 
   margin: 16px 0 128px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
 `
 
 export const FeedbackClient = styled.section`
@@ -229,6 +252,8 @@ export const QuestionSection = styled.section`
     border: 1px solid transparent;
     border-radius: 999px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+
+    padding: 3px;
   }
 `
 export const Footer = styled.footer`

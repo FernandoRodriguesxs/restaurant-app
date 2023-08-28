@@ -36,12 +36,14 @@ import {
   LinkedinLogo,
   TwitterLogo,
 } from '@phosphor-icons/react'
+import { MobileHeader } from './components/MobileHeader'
 
 export const App = () => {
   return (
     <>
       <Wrapper>
         <Header />
+        <MobileHeader />
       </Wrapper>
       <main>
         <Wrapper>
