@@ -91,6 +91,10 @@ export const AboutSection = styled.section`
   .about-left {
     position: absolute;
 
+    img {
+      height: 550px;
+    }
+
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -124,6 +128,7 @@ export const AboutSection = styled.section`
     }
     .button-group {
       display: flex;
+      gap: 12px;
     }
   }
 `
@@ -257,7 +262,7 @@ export const QuestionSection = styled.section`
 
     height: 84px;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.125);
     border-radius: 999px;
     padding: 16px;
 

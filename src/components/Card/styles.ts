@@ -60,8 +60,9 @@ export const CardContainer = styled.div`
     }
 
     span {
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.gray.primary};
       font-size: 1.8rem;
+      font-weight: 700;
     }
   }
   p {
