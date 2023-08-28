@@ -9,7 +9,9 @@ body {
   background: url(./assets/blob.png) no-repeat top right;
   background-size: 1200px;
 
-  
+  @media screen and (max-width: 768px) {
+    background: none;
+  }
 }
 
 a {

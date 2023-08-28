@@ -9,6 +9,11 @@ export const CardContainer = styled.div`
   border-top-right-radius: 45px;
 
   width: 350px;
+
+  @media screen and (max-width: 380px) {
+    width: auto;
+  }
+
   gap: 16px;
 
   picture {
@@ -26,6 +31,10 @@ export const CardContainer = styled.div`
       transform: scale(1);
       border-bottom-left-radius: 45px;
       border-top-right-radius: 45px;
+
+      @media screen and (max-width: 380px) {
+        height: auto;
+      }
 
       &:hover {
         transform: scale(1.1);

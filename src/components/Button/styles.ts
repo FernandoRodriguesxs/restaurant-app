@@ -22,11 +22,6 @@ export const ButtonSecondaryStyled = styled(ButtonStyled)`
   justify-content: center;
   align-items: center;
   gap: 4px;
-
-  @media screen and (max-width: 768px) {
-    background: ${({ theme }) => theme.colors.white};
-    color: ${({ theme }) => theme.colors.gray.secondary};
-  }
 `
 
 export const ButtonThreeStyled = styled(ButtonStyled)`

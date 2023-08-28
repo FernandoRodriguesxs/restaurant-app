@@ -60,7 +60,7 @@ export const App = () => {
               </p>
               <ButtonSecondary>
                 Order Now
-                <ArrowRight size={32} color="#ffffff" />
+                <ArrowRight size={20} color="#ffffff" />
               </ButtonSecondary>
             </div>
             <picture className="hero-right">
@@ -307,9 +307,10 @@ export const App = () => {
               Have Quest in Mind? <br />
               Let us help you
             </h2>
-            <span>
+            <div className="newsletter">
+              <input type="text" placeholder="yourmail@gmail.com" />
               <ButtonSecondary>Send</ButtonSecondary>
-            </span>
+            </div>
           </QuestionSection>
         </Wrapper>
       </main>

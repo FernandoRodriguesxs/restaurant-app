@@ -131,12 +131,17 @@ export const AboutSection = styled.section`
 export const WorkSection = styled.section`
   display: flex;
   justify-content: center;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
 
   .work {
     display: flex;
     flex-direction: column;
 
-    gap: 32px;
+    gap: 16px;
 
     .work-orange {
       color: ${({ theme }) => theme.colors.orange.primary};
@@ -170,6 +175,7 @@ export const ServicesCard = styled.section`
     align-items: center;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 36px 12px;
+    text-align: center;
 
     gap: 34px;
 
@@ -244,17 +250,23 @@ export const QuestionSection = styled.section`
     font-size: 2rem;
   }
 
-  span {
+  .newsletter {
     display: flex;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
 
-    height: 64px;
+    height: 84px;
 
-    border: 1px solid transparent;
-    border-radius: 999px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 999px;
+    padding: 16px;
 
-    padding: 3px;
+    input {
+      border: transparent;
+      outline: none;
+      width: 100%;
+      padding: 16px;
+    }
   }
 `
 export const Footer = styled.footer`
