@@ -144,11 +144,19 @@ export const WorkSection = styled.section`
     h2 {
       color: ${({ theme }) => theme.colors.gray.primary};
       font-size: 2.5rem;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
     p {
       text-align: center;
       line-height: 28px;
       color: ${({ theme }) => theme.colors.gray.secondary};
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
   }
 `
@@ -218,6 +226,10 @@ export const FeedbackClient = styled.section`
   p {
     color: ${({ theme }) => theme.colors.gray.secondary};
     gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   .avaliation {
