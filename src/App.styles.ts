@@ -135,7 +135,7 @@ export const WorkSection = styled.section`
   .work {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     gap: 32px;
 
     .work-orange {
@@ -144,19 +144,10 @@ export const WorkSection = styled.section`
     h2 {
       color: ${({ theme }) => theme.colors.gray.primary};
       font-size: 2.5rem;
-
-      @media screen and (max-width: 768px) {
-        text-align: center;
-      }
     }
     p {
-      text-align: center;
       line-height: 28px;
       color: ${({ theme }) => theme.colors.gray.secondary};
-
-      @media screen and (max-width: 768px) {
-        text-align: center;
-      }
     }
   }
 `
@@ -211,8 +202,6 @@ export const FeedbackClient = styled.section`
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-
   width: 100%;
   margin-top: 20px;
 
@@ -226,6 +215,7 @@ export const FeedbackClient = styled.section`
   p {
     color: ${({ theme }) => theme.colors.gray.secondary};
     gap: 16px;
+    font-weight: 500;
 
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -291,6 +281,7 @@ export const Footer = styled.footer`
     display: flex;
     flex-direction: column;
 
+    list-style: none;
     margin-top: 16px;
     font-size: 14px;
     gap: 8px;

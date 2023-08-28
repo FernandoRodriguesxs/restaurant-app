@@ -35,6 +35,7 @@ import {
   MetaLogo,
   LinkedinLogo,
   TwitterLogo,
+  ArrowRight,
 } from '@phosphor-icons/react'
 import { MobileHeader } from './components/MobileHeader'
 
@@ -57,7 +58,10 @@ export const App = () => {
                 <br />
                 chopping & marinating, so you can cock a fresh food.
               </p>
-              <ButtonSecondary>Order Now</ButtonSecondary>
+              <ButtonSecondary>
+                Order Now
+                <ArrowRight size={32} color="#ffffff" />
+              </ButtonSecondary>
             </div>
             <picture className="hero-right">
               <img src={heroImg} alt="img do hero" />
@@ -109,7 +113,7 @@ export const App = () => {
                 <div className="button-group">
                   <ButtonSecondary>Order Now</ButtonSecondary>
                   <ButtonVideo>
-                    <PlayCircle size={32} />
+                    <PlayCircle size={32} weight="fill" />
                     Watch Video
                   </ButtonVideo>
                 </div>

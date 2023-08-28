@@ -9,7 +9,7 @@ const ButtonStyled = styled.button`
 `
 
 export const ButtonPrimaryStyled = styled(ButtonStyled)`
-  background: ${({ theme }) => theme.colors.orange.primary};
+  background: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.gray.secondary};
   font-weight: 700;
 `
@@ -18,6 +18,15 @@ export const ButtonSecondaryStyled = styled(ButtonStyled)`
   background: ${({ theme }) => theme.colors.orange.primary};
   color: ${({ theme }) => theme.colors.white};
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  @media screen and (max-width: 768px) {
+    background: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.gray.secondary};
+  }
 `
 
 export const ButtonThreeStyled = styled(ButtonStyled)`
