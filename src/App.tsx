@@ -92,7 +92,7 @@ export const App = () => {
         </Wrapper>
         <Wrapper>
           <AboutSection>
-            <Slide direction="up">
+            <Slide direction="right">
               <picture className="about-left">
                 <img src={aboutImg} alt="#" />
               </picture>
@@ -129,7 +129,7 @@ export const App = () => {
           </AboutSection>
         </Wrapper>
         <Wrapper>
-          <Slide direction="down">
+          <Slide direction="left">
             <WorkSection>
               <div className="work">
                 <p className="work-orange">Work</p>
@@ -144,7 +144,7 @@ export const App = () => {
           </Slide>
         </Wrapper>
         <Wrapper>
-          <Slide direction="down">
+          <Slide direction="right">
             <ServicesCard>
               <div className="card-work">
                 <Truck size={64} color="#f28202" weight="fill" />
