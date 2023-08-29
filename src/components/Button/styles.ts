@@ -17,7 +17,6 @@ export const ButtonPrimaryStyled = styled(ButtonStyled)`
 export const ButtonSecondaryStyled = styled(ButtonStyled)`
   background: ${({ theme }) => theme.colors.orange.primary};
   color: ${({ theme }) => theme.colors.white};
-  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
