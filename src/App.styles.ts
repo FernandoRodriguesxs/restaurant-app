@@ -8,6 +8,11 @@ export const Wrapper = styled.div`
 
 export const Hero = styled.div`
   height: calc(100vh - 96px);
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+
   display: flex;
   justify-content: space-between;
 
