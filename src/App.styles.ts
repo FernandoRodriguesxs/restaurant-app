@@ -60,6 +60,8 @@ export const InformaticonSection = styled.section`
   justify-content: space-around;
   align-items: center;
 
+  margin-top: 12px;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;

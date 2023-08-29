@@ -157,7 +157,7 @@ export const App = () => {
               </div>
               <div className="card-work">
                 <HandTap size={64} color="#f28202" weight="fill" />
-                <h3>Fast Deliveries</h3>
+                <h3>Choose How Often</h3>
                 <p>
                   Our team of chefs do the prep <br />
                   work no more chopping <br />
@@ -166,7 +166,7 @@ export const App = () => {
               </div>
               <div className="card-work">
                 <BowlFood size={64} color="#f28202" weight="fill" />
-                <h3>Fast Deliveries</h3>
+                <h3>Pick Meals</h3>
                 <p>
                   Choose your meals from our <br />
                   diverse weekly menu. Find gluten
